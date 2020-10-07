@@ -5,8 +5,8 @@ export LC_ALL=C
 pip3 install wheel setuptools
 pip3 install conan --upgrade
 pip3 install conan_package_tools bincrafters_package_tools
-conan user
-conan remote add altairwei https://api.bintray.com/conan/altairwei/conan --insert
+#conan user
+#conan remote add altairwei https://api.bintray.com/conan/altairwei/conan --insert
 
 if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
   wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh;
@@ -26,5 +26,5 @@ conda activate build-v8
 
 git clone https://github.com/altairwei/conan-v8.git
 cd conan-v8
-conan create . altairwei/testing
+#conan create . altairwei/testing
 
